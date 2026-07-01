@@ -245,6 +245,7 @@ def countdown(total_secs, phase, current_cycle, total_cycles):
     beep(900, 600)
 
 
+
 def run_timer(study_mins, break_mins, cycles):
     for cycle in range(1, cycles + 1):
         banner(f"Cycle {cycle} of {cycles} — time to focus 🎯", "study")
