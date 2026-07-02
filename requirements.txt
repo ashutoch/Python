@@ -5,3 +5,6 @@ google-generativeai
 reportlab
 requests
 schedule
+streamlit
+time
+winsound
