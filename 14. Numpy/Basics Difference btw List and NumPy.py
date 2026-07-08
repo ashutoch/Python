@@ -23,3 +23,4 @@ population_numpy = np.array([123, 455, 677, 776, 699])
 
 average_np = np.mean(population_numpy)
 print(average_np)
+

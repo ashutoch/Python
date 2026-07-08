@@ -9,3 +9,4 @@ streamlit
 time
 winsound
 pyaudio
+numpy
