@@ -45,8 +45,8 @@ arr = np.array([1, 2, 3, 4, 5])
 
 
 #! Range Array
-range_arr = np.arange(0, 10, 2)
-print(range_arr)
+# range_arr = np.arange(0, 10, 2)
+# print(range_arr)
 
 #? arange(start, stop, steps)
 #? works only for 1D array
@@ -54,3 +54,8 @@ print(range_arr)
 
 
 #! Linespace Array
+lines = np.linespace(0, 1, 5)
+print(lines)
+
+#? np.linespace(start, stop, pieces)
+#? here pieces signify the number of divisions
