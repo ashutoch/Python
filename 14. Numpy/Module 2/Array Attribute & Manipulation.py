@@ -35,7 +35,17 @@
 #! Flattening arrays
 #? converting 2D arrays into 1D arrays
 
+# import numpy as np
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+# print(arr)
+# print(arr.flatten())
+
+
+#! Transposing Arrays
+#? Converting row into columns and columns into rows
+
+
 import numpy as np
 arr = np.array([[1, 2, 3], [4, 5, 6]])
-print(arr)
-print(arr.flatten())
+trasposedArr = arr.T
+print(trasposedArr)
