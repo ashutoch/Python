@@ -69,10 +69,17 @@ import numpy as np
 
 #! Universal Functions (ufuncs): Square Root, Exponential
 
-
 arr = np.array([1, 2, 3, 4, 5])
-print(np.sqrt(arr))
-print(np.exp(arr))
-print(np.log(arr))
+# print(np.sqrt(arr))
+# print(np.exp(arr))
+# print(np.log(arr))
 
 #! Aggregate Functions: Sum, Mean, Standard Deviation
+
+print(np.mean(arr))
+
+print(np.var(arr))
+
+print(np.std(arr))
+
+print(np.sum(arr))
