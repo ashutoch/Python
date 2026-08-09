@@ -24,3 +24,5 @@ import numpy as np
 arr = np.array([1,7, 10, 3, 4, 5, 5, 6, 2, 58, 5, 3, 2, 1])
 print(np.unique(arr))
 print(np.sort(arr))
+
+
