@@ -17,10 +17,23 @@ import matplotlib.pyplot as plt
 image = imread(r"./Test.jpg")
 print("image shape ", image.shape)
 
-#! greyscale = (0.2989 * R) + (0.587 * G) + (0.114 * B)
+#! greyscale = (0.2989 * R) + (0.5870 * G) + (0.1140 * B)
 #! threshold = 0 and 255
 
 
 
 #* Step 2: Extract the RGB channels
 #NumPy concept here: Indexing and slicing
+
+R = image[ : , : , 0]
+G = image[ : , : , 1]
+B = image[ : , : , 2]
+
+
+
+#* Step 3: Convert to Greyscale 
+# NumPy concept here: Broadcasting and element-wise operation
+
+greyscale = (0.2989 * R) + (0.5870 * G) + (0.1140 * B)
+print(" GreyScale shape ", greyscale)
+
