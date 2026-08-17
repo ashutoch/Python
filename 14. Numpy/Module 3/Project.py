@@ -1,7 +1,7 @@
 
 #! Image to Greyscale, Threshold convertor using NumPy
 
-import numpy as py
+import numpy as np
 from matplotlib.image import imread
 import matplotlib.pyplot as plt
 
@@ -37,3 +37,34 @@ B = image[ : , : , 2]
 greyscale = (0.2989 * R) + (0.5870 * G) + (0.1140 * B)
 print(" GreyScale shape ", greyscale)
 
+
+
+#* Step 4: Apply Threshold
+# syntax : np.where(condition, value_if_true, value_if_false)
+# np.where(condition, value_if_true, value_if_false)
+
+threshold_value = 128
+thresholded = np.where(greyscale > threshold_value, 255, 0)
+
+
+#* Step 5: Display the result
+
+plt.figure(figsize = (12, 4))
+
+plt.subplot()
+
+
+
+
+
+
+# plt.subplot(1, 3, n) : display 3 images in a row
+
+# astype(np.uint8) : converts pixel values into integers (0 - 255)
+
+# plt.figure(figsize = (12, 4)) #? Purpose : Creates a new figure/canvas to plot your image
+
+# figsize = (width, height) : defines the size of the figure in inches
+
+# plt.subplot(1, 3, 1) #? Purpose: divide the figure into a grid and select the cell to plot in 
+#? Syntax: plt.subplot(nrows, ncols, index)
