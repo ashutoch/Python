@@ -13,3 +13,6 @@ import matplotlib.pyplot as plt
 #? e.g.: (500, 700, 3) -> 500 rows (height), 700 columns (width), 3 channels (RGB)
 
 
+image = imread(r"./Test.jpg")
+print("image shape ", image.shape)
+
